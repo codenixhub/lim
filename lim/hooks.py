@@ -242,3 +242,17 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [["module", "=", "LaptopsinMumbai"]]
+    },
+    {
+        "doctype": "Property Setter",
+        "filters": [["module", "=", "LaptopsinMumbai"]]
+    },
+    {
+        "doctype": "Workspace",
+        "filters": [["name", "in", ["Home"]]]  
+    }
+]
