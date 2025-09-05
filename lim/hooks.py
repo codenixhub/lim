@@ -1,8 +1,8 @@
 app_name = "lim"
 app_title = "LaptopsinMumbai"
-app_publisher = "Ashfaque Mustakim Ansari"
+app_publisher = "CodeNixHub"
 app_description = "custom app for LaptopsinMumbai"
-app_email = "ashfaque2407@gmail.com"
+app_email = "codenix24@gmail.com"
 app_license = "mit"
 
 # Apps
