@@ -250,9 +250,9 @@ fixtures = [
     {
         "doctype": "Property Setter",
         "filters": [["module", "=", "LaptopsinMumbai"]]
+    },
+    {
+        "doctype": "Workspace",
+        "filters": [["name", "in", ["Home"]]]  
     }
-    # {
-    #     "doctype": "Workspace",
-    #     "filters": [["name", "in", ["Home"]]]  
-    # }
 ]

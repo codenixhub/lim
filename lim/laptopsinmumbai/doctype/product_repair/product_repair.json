@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-09-23 23:36:09.147369",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_x5ld",
+  "naming_series",
+  "amended_from",
+  "item_code",
+  "column_break_uvva",
+  "purchase_invoice",
+  "supplier_name",
+  "purchase_price",
+  "section_break_uwqt",
+  "repair_item",
+  "section_break_iuur",
+  "total_repair_cost",
+  "column_break_wsyj",
+  "final_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_x5ld",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Repair",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fetch_from": "purchase_invoice.base_grand_total",
+   "fieldname": "purchase_price",
+   "fieldtype": "Currency",
+   "label": "Purchase Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uvva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iuur",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_repair_cost",
+   "fieldtype": "Currency",
+   "label": "Total Repair Cost"
+  },
+  {
+   "fieldname": "column_break_wsyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_cost",
+   "fieldtype": "Currency",
+   "label": "Final Cost"
+  },
+  {
+   "fieldname": "section_break_uwqt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "repair_item",
+   "fieldtype": "Table",
+   "label": "Repair Item",
+   "options": "Repair Item Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "purchase_invoice.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-24 01:02:11.839476",
+ "modified_by": "Administrator",
+ "module": "LaptopsinMumbai",
+ "name": "Product Repair",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

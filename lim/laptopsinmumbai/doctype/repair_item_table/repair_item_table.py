@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class SeriesForm(Document):
+class RepairItemTable(Document):
 	pass
