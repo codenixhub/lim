@@ -1,0 +1,10 @@
+.widget.shortcut-widget-box {
+    padding: 16px;
+    border: 1px solid #80808036;
+  }
+
+
+  .widget.links-widget-box {
+    border: 1px solid #80808036;
+    padding: 16px !important;
+}
