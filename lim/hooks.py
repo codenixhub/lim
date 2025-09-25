@@ -253,6 +253,6 @@ fixtures = [
     },
     {
         "doctype": "Workspace",
-        "filters": [["name", "in", ["Home"],["Reports"]]]  
+        "filters": [["name", "in", ["Home", "Reports"]]]
     }
 ]
