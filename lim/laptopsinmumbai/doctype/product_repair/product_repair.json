@@ -11,8 +11,6 @@
   "amended_from",
   "item_code",
   "column_break_uvva",
-  "purchase_invoice",
-  "supplier_name",
   "purchase_price",
   "section_break_uwqt",
   "repair_item",
@@ -43,13 +41,7 @@
    "options": "Item"
   },
   {
-   "fieldname": "purchase_invoice",
-   "fieldtype": "Link",
-   "label": "Purchase Invoice",
-   "options": "Purchase Invoice"
-  },
-  {
-   "fetch_from": "purchase_invoice.base_grand_total",
+   "fetch_from": "item_code.custom_purchase_rate",
    "fieldname": "purchase_price",
    "fieldtype": "Currency",
    "label": "Purchase Price",
@@ -93,20 +85,13 @@
    "in_list_view": 1,
    "label": "Series",
    "reqd": 1
-  },
-  {
-   "fetch_from": "purchase_invoice.supplier_name",
-   "fieldname": "supplier_name",
-   "fieldtype": "Data",
-   "label": "Supplier Name",
-   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-24 01:02:11.839476",
+ "modified": "2025-09-24 14:19:06.894627",
  "modified_by": "Administrator",
  "module": "LaptopsinMumbai",
  "name": "Product Repair",
